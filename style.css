@@ -275,7 +275,7 @@ h2, h3{
         background-image: url('banner.jpg');
         background-size: cover;
         background-position: center;
-        height: 700px !important;
+        height: 70vh;
     }
     }
    
