@@ -1,0 +1,281 @@
+
+a {
+  text-decoration: none;
+} 
+
+body{
+  background-color: rgb(39, 39, 39);
+}
+
+hr{
+  border-color: rgb(158, 158, 158);
+  
+}
+
+/* barra */
+.section-container {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  margin-top: 15px;
+}
+
+.section-item {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.section-item:last-child {
+  margin-right: 0;
+}
+
+.section-item img {
+  
+  margin-right: 10px;
+}
+@media screen and (max-width: 900px){
+  .section-item img{
+    width: 5px;
+    height: 18px;
+    font-size: 16px;
+  }
+  
+}
+@media screen and (min-width: 900px){
+  .section-item img{
+    width: 10px;
+    height: 40px;
+    font-size: 35px;
+  }
+  
+}
+
+
+.section-item h4 {
+  margin: 0;
+}
+
+.item h4 {
+  margin: 0;
+}
+
+/*Box*/
+.colorbox{
+  display: inline-block;
+   background-color: rgb(255, 148, 25); 
+   padding: 10px;
+   border-radius: 10px;
+   color: rgb(0, 0, 0);
+   font-size: 16px;
+   text-align: center;
+   cursor: pointer;
+   font-family: 'Montserrat', sans-serif;
+   font-weight: 600;
+   
+}
+
+@media screen and (max-width: 700px){
+  .colorbox{
+    font-size: 15px;
+    margin-left: 5px;
+  }
+}
+@media screen and (min-width: 700px) and (max-width: 1200px){
+  .colorbox{
+    font-size: 30px;
+    margin-left: 10px;
+  }
+  
+}
+@media screen and (min-width: 1200px){
+  .colorbox{
+    font-size: 40px;
+    margin-left: 10px;
+  }
+}
+
+
+/*Fuente*/
+
+h4{
+  color:snow;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  
+}
+@media screen and (max-width: 900px){
+  h4{
+    font-size: 16px;
+  }
+  
+}
+@media screen and (min-width: 900px){
+  h4{
+    font-size: 35px;
+  }
+  
+}
+p{
+  font-family: 'Montserrat', sans-serif;
+  color:snow;
+  font-weight: 400;
+}
+@media screen and (max-width: 900px){
+  p{
+    font-size: 14px;
+  }
+  h1{
+    font-size: 22px;
+  }
+}
+@media screen and (min-width: 900px){
+  p{
+    font-size: 25px;
+  }
+  h1{
+    font-size: 40px;
+  }
+}
+h2, h3{
+  color:snow;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+@media screen and (max-width: 900px){
+  h2, h3{
+    font-size: 11px;
+  }
+  
+}
+@media screen and (min-width: 900px){
+  h2, h3{
+    font-size: 20px;
+  }
+  
+}
+
+/*Carousel*/
+@media screen and (max-width: 730px){
+  .carousel {
+      overflow: hidden;
+    }
+    
+    .carousel-container {
+      display: flex;
+      transition: transform 0.5s ease;
+    }
+    
+    .carousel-item {
+      flex: 0 0 180px; 
+      margin-right: 20px;
+    }
+    
+    .carousel-item img {
+      width: 100%;
+      height: auto;
+    }
+    
+    .carousel-item h3 {
+      text-align: center;
+    }
+  }
+  @media screen and (min-width: 730px) and (max-width: 1200px){
+    .carousel {
+      overflow: hidden;
+    }
+    
+    .carousel-container {
+      display: flex;
+      transition: transform 0.5s ease;
+    }
+    
+    .carousel-item {
+      flex: 0 0 250px;
+      margin-right: 20px;
+    }
+    
+    .carousel-item img {
+      width: 100%;
+      height: auto;
+    }
+    
+    .carousel-item h3 {
+      text-align: center;
+    }
+  }
+@media screen and (min-width: 1200px){
+  .carousel {
+    overflow: hidden;
+  }
+  
+  .carousel-container {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  
+  .carousel-item {
+    flex: 0 0 400px; 
+    margin-right: 20px;
+  }
+  
+  .carousel-item img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .carousel-item h3 {
+    text-align: center;
+  }
+}
+/*Banner*/
+
+@media screen and (max-width: 650px) {
+    header {
+        background-image: url('banner.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 200px !important;
+    }
+    }
+    @media screen and (min-width: 650px) and (max-width: 800px) {
+    header {
+        background-image: url('banner.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 250px !important;
+    }
+    }
+    @media screen and (min-width: 800px) and (max-width: 1000px) {
+      header {
+          background-image: url('banner.jpg');
+          background-size: cover;
+          background-position: center;
+          height: 300px !important;
+      }
+    }
+    @media screen and (min-width: 1000px) and (max-width: 1300px) {
+    header {
+        background-image: url('banner.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 400px !important;
+    }
+    }
+    @media screen and (min-width: 1300px) and (max-width: 1700px) {
+    header {
+        background-image: url('banner.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 550px !important;
+    }
+    }
+    @media screen and (min-width: 1700px){
+    header {
+        background-image: url('banner.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 700px !important;
+    }
+    }
+   
