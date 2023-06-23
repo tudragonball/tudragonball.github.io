@@ -382,7 +382,7 @@
 
   @media screen and (max-width: 700px){
     .colorbox2{
-      font-size: 15px;
+      font-size: 25px;
       
     }
   }
@@ -399,6 +399,7 @@
       
     }
   }
+
   /* video */
   @media screen and (min-width: 1000px){
     .videocont {
@@ -448,3 +449,5 @@
       height: 85%;
     }
   }
+
+  
