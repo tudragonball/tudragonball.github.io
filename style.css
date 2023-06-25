@@ -449,5 +449,84 @@
       height: 85%;
     }
   }
-
+/* Manga */
+@media screen and (min-width: 1200px){
+  .contmanga {
+    display: flex;
+    justify-content: center;
+  }
+    .manga {
+      display: flex;
+        justify-content: space-between; 
+        padding: 0 10px;
+    }
+    .x{
+      width: 30%; 
+        box-sizing: border-box;
+        margin: 0 50px;
+      
+    }
+    .x:first-child {
+      margin-left: 0; 
+    }
+    
+    .x:last-child {
+      margin-right: 0; 
+    }
+    .x img {
+      width: 100%;
+      
+    }
+  }
+  @media screen and (min-width: 800px) and (max-width: 1200px){
+    .contmanga {
+      display: flex;
+      justify-content: center;
+    }
+      .manga {
+        display: flex;
+          justify-content: space-between; 
+          padding: 0 10px;
+      }
+      .x{
+        width: 30%; 
+          box-sizing: border-box;
+          margin: 0 30px;
+        
+      }
+      .x:first-child {
+        margin-left: 0; 
+      }
+      
+      .x:last-child {
+        margin-right: 0; 
+      }
+      .x img {
+        width: 100%;
+        
+      }
+    }
+  @media screen and (max-width: 800px) {
+    .manga {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 0 10px;
+    }
+    
+    .x {
+      width: 45%;
+      box-sizing: border-box;
+      margin-bottom: 20px;
+    }
+    
+    .x:nth-child(n+3) {
+      margin-top: 20px;
+    }
+    
+    .x img {
+      width: 100%;
+      height: 85%;
+    }
+  }
   
