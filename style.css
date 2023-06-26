@@ -161,6 +161,23 @@
     }
     
   }
+h1{
+    color:snow;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    
+  }
+  @media screen and (max-width: 900px){
+    h1{
+      font-size: 16px;
+    }
+    
+  }
+  @media screen and (min-width: 900px){
+    h1{
+      font-size: 35px;
+    }
+  }
 
   /*Carousel*/
   @media screen and (max-width: 730px){
@@ -529,4 +546,20 @@
       height: 85%;
     }
   }
+ .hoja{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+  }
+  @media screen and (max-width: 1300px){
+    .hoja{
+      width: 80%
+    }
+  }
+  @media screen and (min-width: 1300px){
+    .hoja{
+      width: 45%
+    }
+  }
+  
   
