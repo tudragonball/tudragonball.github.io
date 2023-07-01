@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<head>
+    <title>Tu Dragon Ball</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../favicon.png">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+    </style>
+    <script>
+      document.addEventListener('contextmenu', function(event) {
+        event.preventDefault();
+      });
+    </script>
+    <meta name="viewport" content="width=device-width, user scalable=no, initial-scale=1.0, minimun-scale=1.0">
+</head>
+<body>
+  <header class="banner2">
+  </header>
+  <!--barra-->
+  <div class="section-container">
+    <div class="section-item">
+      <img class="bar" src="bar.png">
+      <a href="index.html"><h4>Inicio</h4></a>
+    </div>
+    <div class="section-item">
+      <img class="bar" src="bar.png">
+      <a href="video.html"><h4>Videos</h4></a>
+    </div>
+    <div class="section-item">
+      <img class="bar" src="bar.png">
+      <a href="manga.html"><h4>Fan Mangas</h4></a>
+    </div>
+    <div class="section-item">
+      <img class="bar" src="bar.png">
+      <a href="edit.html"><h4>Edits</h4></a>
+    </div>
+      
+  </div>
+  <br>
+  <br>
+  <!-- contenido -->
+
+  <div class="contmanga">
+    <div class="manga">
+      <div class="x">
+        <img href="" src="https://i.ytimg.com/vi/nfPJGteSNcw/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDPAWrEO-W81IboPKN17VP8Gz15IA">
+        <h3>GOKU EL HIJO DE BILLS</h3>
+      </div>
+      <div class="x">
+        <img href="" src="https://i.ytimg.com/vi/BKfHuRIozYA/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDOXOsaafpNKW8txXiWmT6mhADkyg">
+        <h3>GOKU EL HIJO DE ZENO SAMA</h3>
+      </div>
+      <div class="x">
+        <img href="" src="https://i.ytimg.com/vi/yCFWceggouI/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBV03C6aCtaLUNhLqR6qWlSJDuxrA">
+        <h3>GOKU ENCERRADO EN LA HABITACION DEL TIEMPO POR MILLONES DE AÑOS E INMORTAL</h3>
+        
+      </div>
+      
+      <div class="x">
+        <img href="" src="https://i.ytimg.com/vi/K5K_UIoOROw/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAl-OvZWrczT_bpZjfyHOCGBPmh7A">
+        <h3>GOKU Y VEGETA TRAICIONADOS Y ENCERRADOS EN LA HABITACIÓN DEL TIEMPO</h3>
+        
+      </div>
+      
+    </div>
+  </div>
+  <br>
+  <script>
+  function cargarVideo(event, element) {
+    event.preventDefault(); // Evitar comportamiento predeterminado del enlace
+
+    var videoURL = element.parentNode.getAttribute('data-video');
+
+    // Abrir video.html en una nueva pestaña o ventana
+    window.open('video.html?url=' + encodeURIComponent(videoURL), '_blank');
+  }
+</script>
+  <div class="contmanga">
+    <div class="manga">
+      <div class="x" data-video="https://www.youtube.com/embed/zTq7Fkp6RHY">
+        <a href="video.html" onclick="cargarVideo(event, this)">
+          <img src="https://i.ytimg.com/vi/0ov6BoulXCM/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLC7uMTueRavDdp1-bw_6RWOqgrAJg">
+        </a>
+        <h3>GOKU EL GUERRERO DEFINITIVO</h3>
+      </div>
+      <div class="x">
+        <img href="" src="https://i.ytimg.com/vi/Ytu7vpcORB8/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBhT_FGBDRK-vBC43y5Khg0qyfzEA">
+        <h3>GOKU RENACE CON SUS RECUERDOS Y PODERES</h3>
+      </div>
+      <div class="x">
+        <img href="" src="https://i.ytimg.com/vi/sxUgarZIFu8/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAl6BLvq2hcVXoiwQATX9g90V_vig">
+        <h3>GOKU Y VEGETA TRAICIONADOS POR LOS DIOSES</h3>
+      </div>
+      <div class="x">
+        <img href="" src="https://i.ytimg.com/vi/QIytBBFlweg/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLA3CSIoG9peSiTfpmX89UXd3nNXfQ">
+        <h3>QHPS SI GOKU SE VOLVIA KAKAROTO</h3>
+      </div>
+    </div>
+  </div>
+
+  <div class="contmanga">
+    <div class="manga">
+      <div class="x">
+        <img href="" src="">
+        <h3></h3>
+      </div>
+      <div class="x">
+        <img href="" src="">
+        <h3></h3>
+      </div>
+      <div class="x">
+        <img href="" src="">
+        <h3></h3>
+      </div>
+      <div class="x">
+        <img href="" src="">
+        <h3></h3>
+      </div>
+    </div>
+  </div>
+
+  <div class="contmanga">
+    <div class="manga">
+      <div class="x">
+        <img href="" src="">
+        <h3></h3>
+      </div>
+      <div class="x">
+        <img href="" src="">
+        <h3></h3>
+      </div>
+      <div class="x">
+        <img href="" src="">
+        <h3></h3>
+      </div>
+      <div class="x">
+        <img href="" src="">
+        <h3></h3>
+      </div>
+    </div>
+  </div>
+
+  <div class="contmanga">
+    <div class="manga">
+      <div class="x">
+        <img href="" src="">
+        <h3></h3>
+      </div>
+      <div class="x">
+        <img href="" src="">
+        <h3></h3>
+      </div>
+      <div class="x">
+        <img href="" src="">
+        <h3></h3>
+      </div>
+      <div class="x">
+        <img href="" src="">
+        <h3></h3>
+      </div>
+    </div>
+  </div>
+
+  <div class="contmanga">
+    <div class="manga">
+      <div class="x">
+        <img href="" src="">
+        <h3></h3>
+      </div>
+      <div class="x">
+        <img href="" src="">
+        <h3></h3>
+      </div>
+      <div class="x">
+        <img href="" src="">
+        <h3></h3>
+      </div>
+      <div class="x">
+        <img href="" src="">
+        <h3></h3>
+      </div>
+    </div>
+  </div>
+
+  <div class="contmanga">
+    <div class="manga">
+      <div class="x">
+        <img href="" src="">
+        <h3></h3>
+      </div>
+      <div class="x">
+        <img href="" src="">
+        <h3></h3>
+      </div>
+      <div class="x">
+        <img href="" src="">
+        <h3></h3>
+      </div>
+      <div class="x">
+        <img href="" src="">
+        <h3></h3>
+      </div>
+    </div>
+  </div>
+
+  <div class="contmanga">
+    <div class="manga">
+      <div class="x">
+        <img href="" src="">
+        <h3></h3>
+      </div>
+      <div class="x">
+        <img href="" src="">
+        <h3></h3>
+      </div>
+      <div class="x">
+        <img href="" src="">
+        <h3></h3>
+      </div>
+      <div class="x">
+        <img href="" src="">
+        <h3></h3>
+      </div>
+    </div>
+  </div>
+
+</body>
