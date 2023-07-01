@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<head>
+  <title>Tu Dragon Ball</title>
+  <link href="style.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../favicon.png">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+    </style>
+    <script>
+      document.addEventListener('contextmenu', function(event) {
+        event.preventDefault();
+      });
+    </script>
+    <meta name="viewport" content="width=device-width, user scalable=no, initial-scale=1.0, minimun-scale=1.0">
+  <style>
+    
+    iframe{
+      display: flex;
+      justify-content: center;
+      margin: auto;
+      width: 70%;
+      
+    }
+    @media screen and (max-width: 800px){
+    iframe{
+      height: 210px
+
+    }
+  
+  }
+  @media screen and (min-width: 800px) and (max-width: 1300px){
+    iframe{
+      height: 490px
+    }
+  
+  }
+  @media screen and (min-width: 1300px){
+    iframe{
+      height: 800px
+      
+    }
+  }
+    
+  </style>
+</head>
+<body>
+  <header>
+
+  </header>
+  <!--barra-->
+  <div class="section-container">
+    <div class="section-item">
+      <img class="bar" src="bar.png">
+      <a href="index.html"><h4>Inicio</h4></a>
+    </div>
+    <div class="section-item">
+      <img class="bar" src="bar.png">
+      <a href="contenido.html"><h4>Videos</h4></a>
+    </div>
+    <div class="section-item">
+      <img class="bar" src="bar.png">
+      <a href="manga.html"><h4>Fan Mangas</h4></a>
+    </div>
+    <div class="section-item">
+      <img class="bar" src="bar.png">
+      <a href="edit.html"><h4>Edits</h4></a>
+    </div>
+      
+  </div>
+  <br>
+  <br>
+  <div class="iframe-container"></div>
+  <br>
+  <br>
+  <a href="../kakumei.html"><div class="colorbox2"> VOLVER </div></a>
+  <!-- script -->
+  <script>    
+    var urlParams = new URLSearchParams(window.location.search);
+    var videoURL = urlParams.get('url');
+
+    var iframe = document.createElement('iframe');
+    iframe.setAttribute('src', videoURL);
+    iframe.setAttribute('title', 'YouTube video player');
+    iframe.setAttribute('frameborder', '0');
+    iframe.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture');
+    iframe.setAttribute('allowfullscreen', '');
+
+    var iframeContainer = document.querySelector('.iframe-container');
+    iframeContainer.appendChild(iframe);
+  </script>
+</body>
