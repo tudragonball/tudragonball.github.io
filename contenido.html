@@ -13,7 +13,9 @@
     </script>
     <meta name="viewport" content="width=device-width, user scalable=no, initial-scale=1.0, minimun-scale=1.0">
     <style>
-      @media screen and (max-width: 800px) {  
+      
+      @media screen and (max-width: 800px) {
+       
         .x img {
           width: 100%;
           height: 70%;      
@@ -46,190 +48,171 @@
   </div>
   <br>
   <br>
-  <!-- contenido -->
+  <script>
+    function cargarVideo(event, element) {
+      event.preventDefault(); // Evitar comportamiento predeterminado del enlace
+      var videoURL = element.parentNode.getAttribute('data-video');
+  
+      /* Abrir video.html en una nueva pestaña o ventana
+      window.open('video.html?url=' + encodeURIComponent(videoURL), '_blank');*/
 
+      // Abrir video.html en misma pestaña o ventana
+      window.location.href = 'video.html?url=' + encodeURIComponent(videoURL);
+    }
+  </script>
+
+  <!-- contenido -->
+  
   <div class="contmanga">
     <div class="manga">
-      <div class="x">
-        <img href="" src="https://i.ytimg.com/vi/nfPJGteSNcw/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDPAWrEO-W81IboPKN17VP8Gz15IA">
+
+      <div class="x" data-video="https://www.youtube.com/embed/nfPJGteSNcw">
+        <a href="video.html" onclick="cargarVideo(event, this)">
+          <img src="https://i.ytimg.com/vi/nfPJGteSNcw/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDPAWrEO-W81IboPKN17VP8Gz15IA">
+        </a>
         <h3>GOKU EL HIJO DE BILLS</h3>
       </div>
-      <div class="x">
-        <img href="" src="https://i.ytimg.com/vi/BKfHuRIozYA/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDOXOsaafpNKW8txXiWmT6mhADkyg">
-        <h3>GOKU EL HIJO DE ZENO SAMA</h3>
+      <div class="x" data-video="https://www.youtube.com/embed/A0BG2j91sgI">
+        <a href="video.html" onclick="cargarVideo(event, this)">
+          <img src="https://i.ytimg.com/vi/A0BG2j91sgI/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCqV8W2kZezXnSMQbqgc79JTTZ_Pg">
+        </a>
+        <h3>GOKU JUEGA A EL JUEGO DEL CALAMAR</h3>
       </div>
-      <div class="x">
-        <img href="" src="https://i.ytimg.com/vi/yCFWceggouI/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBV03C6aCtaLUNhLqR6qWlSJDuxrA">
+      <div class="x" data-video="https://www.youtube.com/embed/yCFWceggouI">
+        <a href="video.html" onclick="cargarVideo(event, this)">
+          <img src="https://i.ytimg.com/vi/yCFWceggouI/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBV03C6aCtaLUNhLqR6qWlSJDuxr">
+        </a>
         <h3>GOKU ENCERRADO EN LA HABITACION DEL TIEMPO POR MILLONES DE AÑOS E INMORTAL</h3>
-        
+      </div>    
+      <div class="x" data-video="https://www.youtube.com/embed/rPunrzkIpeo">
+        <a href="video.html" onclick="cargarVideo(event, this)">
+          <img src="https://i.ytimg.com/vi/8VXxfZhfy10/hq720.jpg?sqp=-oaymwE2COgCEMoBSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhlIGUoZTAP&rs=AOn4CLBPQCm1gIT1whLSt63xZofD4xUKrw">
+        </a>
+        <h3>Goku y Vegeta Cantando Ven y Sana Mi Dolor🔥</h3>
       </div>
       
-      <div class="x">
-        <img href="" src="https://i.ytimg.com/vi/K5K_UIoOROw/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAl-OvZWrczT_bpZjfyHOCGBPmh7A">
-        <h3>GOKU Y VEGETA TRAICIONADOS Y ENCERRADOS EN LA HABITACIÓN DEL TIEMPO</h3>
-        
-      </div>
       
     </div>
   </div>
   <br>
-  <script>
-  function cargarVideo(event, element) {
-    event.preventDefault(); // Evitar comportamiento predeterminado del enlace
 
-    var videoURL = element.parentNode.getAttribute('data-video');
-
-    // Abrir video.html en una nueva pestaña o ventana
-    window.open('video.html?url=' + encodeURIComponent(videoURL), '_blank');
-  }
-</script>
   <div class="contmanga">
     <div class="manga">
-      <div class="x" data-video="https://www.youtube.com/embed/zTq7Fkp6RHY">
+      <div class="x" data-video="https://www.youtube.com/embed/0ov6BoulXCM">
         <a href="video.html" onclick="cargarVideo(event, this)">
           <img src="https://i.ytimg.com/vi/0ov6BoulXCM/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLC7uMTueRavDdp1-bw_6RWOqgrAJg">
         </a>
         <h3>GOKU EL GUERRERO DEFINITIVO</h3>
       </div>
-      <div class="x">
-        <img href="" src="https://i.ytimg.com/vi/Ytu7vpcORB8/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBhT_FGBDRK-vBC43y5Khg0qyfzEA">
-        <h3>GOKU RENACE CON SUS RECUERDOS Y PODERES</h3>
+      <div class="x" data-video="https://www.youtube.com/embed/N9w4ed9RO3Q">
+        <a href="video.html" onclick="cargarVideo(event, this)">
+          <img src="https://i.ytimg.com/vi/N9w4ed9RO3Q/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCEz_KyJPBy0Z6NqEFx_t6jWFbJGw">
+        </a>
+        <h3>VEGETA ME QUEDARÉ CON TU CIBER</h3>
       </div>
-      <div class="x">
-        <img href="" src="https://i.ytimg.com/vi/sxUgarZIFu8/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAl6BLvq2hcVXoiwQATX9g90V_vig">
+      <div class="x" data-video="https://www.youtube.com/embed/K5K_UIoOROw&t=6s">
+        <a href="video.html" onclick="cargarVideo(event, this)">
+          <img src="https://i.ytimg.com/vi/sxUgarZIFu8/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAl6BLvq2hcVXoiwQATX9g90V_vig">
+        </a>
         <h3>GOKU Y VEGETA TRAICIONADOS POR LOS DIOSES</h3>
       </div>
-      <div class="x">
-        <img href="" src="https://i.ytimg.com/vi/QIytBBFlweg/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLA3CSIoG9peSiTfpmX89UXd3nNXfQ">
+      <div class="x" data-video="https://www.youtube.com/embed/QIytBBFlweg">
+        <a href="video.html" onclick="cargarVideo(event, this)">
+          <img src="https://i.ytimg.com/vi/QIytBBFlweg/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLA3CSIoG9peSiTfpmX89UXd3nNXfQ">
+        </a>
         <h3>QHPS SI GOKU SE VOLVIA KAKAROTO</h3>
       </div>
     </div>
   </div>
-
-  <div class="contmanga">
-    <div class="manga">
-      <div class="x">
-        <img href="" src="">
-        <h3></h3>
-      </div>
-      <div class="x">
-        <img href="" src="">
-        <h3></h3>
-      </div>
-      <div class="x">
-        <img href="" src="">
-        <h3></h3>
-      </div>
-      <div class="x">
-        <img href="" src="">
-        <h3></h3>
-      </div>
+  <br>
+<div class="contmanga">
+  <div class="manga">
+    <div class="x" data-video="https://www.youtube.com/embed/IQPoSycYr68">
+      <a href="video.html" onclick="cargarVideo(event, this)">
+        <img src="https://i.ytimg.com/vi/IQPoSycYr68/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCYtuEtCzXfs_EiyD19CYYJbLHAYw">
+      </a>
+      <h3>GOKU ASALTA LA JOYERIA DE MONDONGO</h3>
+    </div>
+    <div class="x" data-video="https://www.youtube.com/embed/K5K_UIoOROw">
+      <a href="video.html" onclick="cargarVideo(event, this)">
+        <img src="https://i.ytimg.com/vi/K5K_UIoOROw/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAl-OvZWrczT_bpZjfyHOCGBPmh7A">
+      </a>
+      <h3>GOKU Y VEGETA TRAICIONADOS Y ENCERRADOS EN LA HABITACIÓN DEL TIEMPO</h3>
+    </div> 
+    
+    <div class="x" data-video="https://www.youtube.com/embed/hdQvCB1-OBs">
+      <a href="video.html" onclick="cargarVideo(event, this)">
+        <img src="https://i.ytimg.com/vi/hdQvCB1-OBs/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAfO7ZtP0-6LQ5ZlhJYsOPCGcXVAg">
+      </a>
+      <h3>Vegeta se cambia a Movistar</h3>
+    </div>
+    <div class="x" data-video="https://www.youtube.com/embed/Zggt0k9x8HY">
+      <a href="video.html" onclick="cargarVideo(event, this)">
+        <img src="https://i.ytimg.com/vi/Ytu7vpcORB8/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBhT_FGBDRK-vBC43y5Khg0qyfzEA">
+      </a>
+      <h3>GOKU RENACE CON SUS RECUERDOS Y PODERES</h3>
     </div>
   </div>
-
+</div>
+  <br>
   <div class="contmanga">
-    <div class="manga">
-      <div class="x">
-        <img href="" src="">
-        <h3></h3>
-      </div>
-      <div class="x">
-        <img href="" src="">
-        <h3></h3>
-      </div>
-      <div class="x">
-        <img href="" src="">
-        <h3></h3>
-      </div>
-      <div class="x">
-        <img href="" src="">
-        <h3></h3>
-      </div>
+  <div class="manga">
+    <div class="x" data-video="https://www.youtube.com/embed/ry9Q0BflnMg">
+      <a href="video.html" onclick="cargarVideo(event, this)">
+        <img src="https://i.ytimg.com/vi/ry9Q0BflnMg/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDerXhjLNhP_CnpaMHcg5AeX-83-g">
+      </a>
+      <h3>GOKU Y VEGETA TIKTOKERS bailando ven y sana mi dolor VERSION EXTENDIDA</h3>
+    </div>
+    <div class="x" data-video="https://www.youtube.com/embed/hlDbF6m1Pr8">
+      <a href="video.html" onclick="cargarVideo(event, this)">
+        <img src="https://i.ytimg.com/vi/hlDbF6m1Pr8/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDhvF-UVdn9A0-66JK2TPZIpdladw">
+      </a>
+      <h3>VEGETA CANTA SABOR A CARAMELO</h3>
+    </div>
+    <div class="x" data-video="https://www.youtube.com/embed/vHB08zGjnwg">
+      <a href="video.html" onclick="cargarVideo(event, this)">
+        <img src="https://i.ytimg.com/vi/vHB08zGjnwg/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDQmjI6rfl0aeXQBBu9kHu_Z-zqWw">
+      </a>
+      <h3>VEGETA CANTA MOTOMAMI</h3>
+    </div>
+    <div class="x" data-video="https://www.youtube.com/embed/DKz9Mf9C9lA">
+      <a href="video.html" onclick="cargarVideo(event, this)">
+        <img src="https://i.ytimg.com/vi/DKz9Mf9C9lA/hqdefault.jpg?sqp=-oaymwE2COADEI4CSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_g6AArgIigIMCAAQARh_IFIoIzAP&rs=AOn4CLBlLStk8k55QNSE9ZakftQHNZqKQw">
+      </a>
+      <h3>EL SUPER ALBAÑIL...</h3>
     </div>
   </div>
-
+  </div>
+  <br>
   <div class="contmanga">
-    <div class="manga">
-      <div class="x">
-        <img href="" src="">
-        <h3></h3>
-      </div>
-      <div class="x">
-        <img href="" src="">
-        <h3></h3>
-      </div>
-      <div class="x">
-        <img href="" src="">
-        <h3></h3>
-      </div>
-      <div class="x">
-        <img href="" src="">
-        <h3></h3>
-      </div>
+  <div class="manga">
+    <div class="x" data-video="https://www.youtube.com/embed/tKVZWOLh1VQ">
+      <a href="video.html" onclick="cargarVideo(event, this)">
+        <img src="https://i.ytimg.com/vi/tKVZWOLh1VQ/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLD0oLgU9SOnoUmpMAffSNy1sZjNmQ">
+      </a>
+      <h3>ya vete del ciber freezer</h3>
+    </div>
+    
+    <div class="x" data-video="https://www.youtube.com/embed/BKfHuRIozYA">
+      <a href="video.html" onclick="cargarVideo(event, this)">
+        <img src="https://i.ytimg.com/vi/BKfHuRIozYA/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDOXOsaafpNKW8txXiWmT6mhADkyg">
+      </a>
+      <h3>GOKU EL HIJO DE ZENO SAMA</h3>
+    </div>
+    <div class="x" data-video="https://www.youtube.com/embed/AIEU2xi6L1o">
+      <a href="video.html" onclick="cargarVideo(event, this)">
+        <img src="https://i.ytimg.com/vi/Ga6w5cvghSc/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBGl6OjpT87z3O3xKtGtxxbNnz88g">
+      </a>
+      <h3>BAILE GRACIOSO DE BILLS CON GOKU Y VEGETA</h3>
+    </div>
+    <div class="x" data-video="https://www.youtube.com/embed/pP0CI8VS1Ts">
+      <a href="video.html" onclick="cargarVideo(event, this)">
+        <img src="https://i.ytimg.com/vi/pP0CI8VS1Ts/hq2.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDahvLruWcxhEGCnTuaJfwKYwHVIA">
+      </a>
+      <h3>GOKU X VADOS UN AMOR PROHIBIDO</h3>
     </div>
   </div>
-
-  <div class="contmanga">
-    <div class="manga">
-      <div class="x">
-        <img href="" src="">
-        <h3></h3>
-      </div>
-      <div class="x">
-        <img href="" src="">
-        <h3></h3>
-      </div>
-      <div class="x">
-        <img href="" src="">
-        <h3></h3>
-      </div>
-      <div class="x">
-        <img href="" src="">
-        <h3></h3>
-      </div>
-    </div>
   </div>
-
-  <div class="contmanga">
-    <div class="manga">
-      <div class="x">
-        <img href="" src="">
-        <h3></h3>
-      </div>
-      <div class="x">
-        <img href="" src="">
-        <h3></h3>
-      </div>
-      <div class="x">
-        <img href="" src="">
-        <h3></h3>
-      </div>
-      <div class="x">
-        <img href="" src="">
-        <h3></h3>
-      </div>
-    </div>
-  </div>
-
-  <div class="contmanga">
-    <div class="manga">
-      <div class="x">
-        <img href="" src="">
-        <h3></h3>
-      </div>
-      <div class="x">
-        <img href="" src="">
-        <h3></h3>
-      </div>
-      <div class="x">
-        <img href="" src="">
-        <h3></h3>
-      </div>
-      <div class="x">
-        <img href="" src="">
-        <h3></h3>
-      </div>
-    </div>
-  </div>
-
+  <br>
+ 
 </body>
