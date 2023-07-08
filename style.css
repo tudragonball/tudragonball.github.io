@@ -171,13 +171,20 @@ h1{
     h1{
       font-size: 16px;
     }
+    .footer{
+      font-size: 9px;
+    }
     
   }
   @media screen and (min-width: 900px){
     h1{
       font-size: 35px;
     }
+    .footer{
+      font-size: 15px;
+    }
   }
+
 
   /*Carousel*/
   @media screen and (max-width: 730px){
