@@ -187,6 +187,28 @@ h1{
 
 
   /*Carousel*/
+ @media screen and (max-width: 900px){
+    .next-button, .prev-button{
+      width: 8%;
+    
+      font-size: 18px;
+
+    }
+    .next-button{
+      margin-right: 83%;
+    }
+  }
+  @media screen and (min-width: 900px){
+    .next-button, .prev-button{
+      width: 5%;
+    
+      font-size: 27px;
+
+    }
+    .next-button{
+      margin-right: 89%;
+    }
+  }
   @media screen and (max-width: 730px){
     .carousel {
         overflow: hidden;
