@@ -205,8 +205,10 @@ h1{
       font-size: 27px;
 
     }
-    .next-button{
-      margin-right: 89%;
+    .prev-button{
+      position: absolute;
+      right: 10px;
+
     }
   }
   @media screen and (max-width: 730px){
